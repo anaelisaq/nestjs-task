@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
 import { NotFoundException } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
-import { TaskStatus } from './tasks-status.enum';
-import { TasksRepository } from './tasks.repository';
-import { TasksService } from './tasks.service';
+import { TaskStatus } from '../src/tasks/tasks-status.enum';
+import { TasksRepository } from '../src/tasks/tasks.repository';
+import { TasksService } from '../src/tasks/tasks.service';
 
 const mockTasksRepository = () => ({
  getTasks: jest.fn(),
